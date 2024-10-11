@@ -91,7 +91,7 @@ from app.restore_names import restore_names
 )
 def test_restore_names(users: list[dict], expected: list[dict]) -> None:
     """
-    Test restore_names function to ensure it restores first_name field correctly.
+    Test restore_names to ensure first_name is restored correctly.
     """
     restore_names(users)
     assert users == expected, f"Expected {expected}, but get {users}"
